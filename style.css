@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+
+body {
+  margin: 0%;
+}
+
+
+p {
+  font-size: 20px;
+  font-family: 'New Tegomin';
+}
+
+a {
+  font-family: 'New Tegomin';
+  font-size: 30px;
+}
+
+h1 {
+  font-family: 'New Tegomin';
+  font-size: 90px;
+}
+
+/* шапка */
+header{
+    display: flex;
+    padding: 10px;
+    background-color: rgba(5, 24, 82, 0.842);
+  }
+/* шапка */
+
+
+
+
+
+/* бургер-меню */
+  .burger {
+    position: relative;
+    margin-left: 200px;
+    height: 80px;
+    width: 80px;
+    cursor: pointer;
+    background: url(fi-rr-align-justify.svg) no-repeat;
+}
+/* бургер-меню */
+
+
+
+
+/* настройка фона и позиций 1 секции*/
+article {
+  background-color:rgba(236, 214, 15, 0.973);
+  display: flex;
+  justify-content: center;
+}
+
+.about {
+  margin-left: 50px;
+}
+/* настройка фона и позиций 1 cекции */
+ 
+
+
+/* кнопка */
+.Learn {
+  font-family: 'New Tegomin';
+  text-decoration: none;
+  color: black;
+  background: rgba(236, 214, 15, 0.973);
+  padding: 10px;
+}
+
+.Learn:hover {
+  background: rgba(206, 196, 111, 0.973);
+}
+/* кнопка */
+
+
+
+.about-paragraph {
+  line-height: 50px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.paragraph {
+  line-height: 50px;
+  font-weight: 300;
+}
+
+
+/* настройка фотографий */
+.photo123 {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px;
+  transition: 1s;
+}
+
+.photo:hover {
+  transform: scale(2);
+  transition: 1s;
+}
+
+.photo1 {
+  position: relative;
+  top: 70px;
+  width: 600px;
+}
+
+
+.nature-picture {
+  height: 500px;
+  transition: transform 0.2s;
+}
+
+.nature-picture:hover {
+  transform: scale(1.1);
+}
+
+.picture-wrapper {
+  overflow: hidden;
+}
+
+
+
+/* настройка фона 1 мейна */
+.main1 {
+  background-color: rgba(5, 24, 82, 0.842);
+}
+/* настройка фона 1 мейна */
+
+
+
+
+/* настройки форм */
+
+.form-label {
+  font-size: 40px;
+  font-family: 'New Tegomin';
+  position: relative;
+  margin-left: 168px;
+}
+
+.form-label1 {
+  position: relative;
+  font-size: 40px;
+  font-family: 'New Tegomin';
+  margin-left: 100px;
+  top: 30px;
+}
+
+
+
+.form-control {
+  position: relative;
+  margin-left: 20px;
+  width: 500px;
+  height: 40px;
+}
+
+.form-control1 {
+  position: relative;
+  margin-left: 20px;
+  width: 500px;
+  height: 100px;
+  top: 30px;
+}
+
+/* настройки форм */
