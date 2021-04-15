@@ -8,17 +8,24 @@ body {
 
 p {
   font-size: 20px;
-  font-family: 'New Tegomin';
+  font-family: 'Dela Gothic One';
 }
 
-a {
-  font-family: 'New Tegomin';
-  font-size: 30px;
-}
 
 h1 {
-  font-family: 'New Tegomin';
+  font-family: 'Dela Gothic One';
   font-size: 90px;
+  color: aliceblue;
+}
+
+.Portfolio {
+  position: relative;
+  margin-left: 600px;
+}
+
+.Design {
+  position: relative;
+  margin-left: 600px;
 }
 
 /* шапка */
@@ -45,6 +52,11 @@ header{
 /* бургер-меню */
 
 
+.Freepik {
+  font-family: 'Dela Gothic One';
+  font-size: 21px;
+  color: black;
+}
 
 
 /* настройка фона и позиций 1 секции*/
@@ -61,19 +73,58 @@ article {
  
 
 
-/* кнопка */
+/* кнопки */
 .Learn {
+  font-size: 30px;
   font-family: 'New Tegomin';
   text-decoration: none;
   color: black;
   background: rgba(236, 214, 15, 0.973);
-  padding: 10px;
+  padding: 20px 40px;
+  
+
+  position: relative;
+  margin-left: 300px;
+  top: 20px;
 }
 
 .Learn:hover {
   background: rgba(206, 196, 111, 0.973);
 }
-/* кнопка */
+
+
+.Learn2 {
+  font-size: 30px;
+  font-family: 'New Tegomin';
+  text-decoration: none;
+  color: black;
+  background: rgba(236, 214, 15, 0.973);
+  padding: 20px 40px;
+  
+
+  position: relative;
+  top: 20px;
+}
+
+.Submit {
+  color: #000000;
+    font-size: 25px;
+    text-decoration: none;
+    border: 2px solid #000000;
+    padding: 10px 40px;
+    background-color: rgba(236, 214, 15, 0.973);;
+    margin-top: 50px;
+    display: inline-block;
+
+    position: relative;
+    margin-left: 100px;
+}
+
+.Submit:hover {
+  background-color: black;
+  color: aliceblue;
+}
+/* кнопки */
 
 
 
@@ -84,8 +135,15 @@ article {
 }
 
 .paragraph {
-  line-height: 50px;
-  font-weight: 300;
+  position: relative;
+  margin-left: 300px;
+}
+
+.predsl {
+  position: relative;
+  margin-left: 300px;
+  font-size: 30px;
+  font-family: 'Dela Gothic One';
 }
 
 
@@ -104,8 +162,9 @@ article {
 
 .photo1 {
   position: relative;
-  top: 70px;
-  width: 600px;
+  top: 100px;
+  max-width: 80%;
+  
 }
 
 
@@ -121,14 +180,18 @@ article {
 .picture-wrapper {
   overflow: hidden;
 }
+/* настройка фотографий */
 
 
-
-/* настройка фона 1 мейна */
+/* настройка фона 1/2 мейна */
 .main1 {
   background-color: rgba(5, 24, 82, 0.842);
 }
-/* настройка фона 1 мейна */
+
+.main2 {
+  background-color: rgba(236, 214, 15, 0.973);
+}
+/* настройка фона 1/2 мейна */
 
 
 
@@ -166,5 +229,6 @@ article {
   height: 100px;
   top: 30px;
 }
+
 
 /* настройки форм */
