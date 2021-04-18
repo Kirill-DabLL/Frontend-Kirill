@@ -5,12 +5,10 @@ body {
   margin: 0%;
 }
 
-
 p {
   font-size: 20px;
   font-family: 'Dela Gothic One';
 }
-
 
 h1 {
   font-family: 'Dela Gothic One';
@@ -29,28 +27,23 @@ h1 {
 }
 
 /* шапка */
-header{
-    display: flex;
-    padding: 10px;
-    background-color: rgba(5, 24, 82, 0.842);
-  }
+header {
+  display: flex;
+  padding: 10px;
+  background-color: rgba(5, 24, 82, 0.842);
+}
 /* шапка */
 
-
-
-
-
 /* бургер-меню */
-  .burger {
-    position: relative;
-    margin-left: 200px;
-    height: 80px;
-    width: 80px;
-    cursor: pointer;
-    background: url(fi-rr-align-justify.svg) no-repeat;
+.burger {
+  position: relative;
+  margin-left: 200px;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  background: url(fi-rr-align-justify.svg) no-repeat;
 }
 /* бургер-меню */
-
 
 .Freepik {
   font-family: 'Dela Gothic One';
@@ -58,20 +51,39 @@ header{
   color: black;
 }
 
-
 /* настройка фона и позиций 1 секции*/
 article {
-  background-color:rgba(236, 214, 15, 0.973);
+  background-color: rgba(236, 214, 15, 0.973);
+
+  padding-left: 50px;
+  padding-right: 50px;
+  min-height: 100%;
+  max-width: 100%;
+}
+.art-content {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+.teamlogo {
+  background-image: url('./photo13.jpg');
+  background-repeat: no-repeat;
+  min-height: 742px;
+  background-position: 50% 50%;
+}
+.port {
+  margin-top: 570px;
+  margin-right: 370px;
 }
 
-.about {
-  margin-left: 50px;
+.Portfolio {
+  display: flex;
+  margin-bottom: 300px;
+  margin-right: 200px;
 }
+
 /* настройка фона и позиций 1 cекции */
- 
-
 
 /* кнопки */
 .Learn {
@@ -81,7 +93,6 @@ article {
   color: black;
   background: rgba(236, 214, 15, 0.973);
   padding: 20px 40px;
-  
 
   position: relative;
   margin-left: 300px;
@@ -92,7 +103,6 @@ article {
   background: rgba(206, 196, 111, 0.973);
 }
 
-
 .Learn2 {
   font-size: 30px;
   font-family: 'New Tegomin';
@@ -100,7 +110,6 @@ article {
   color: black;
   background: rgba(236, 214, 15, 0.973);
   padding: 20px 40px;
-  
 
   position: relative;
   top: 20px;
@@ -108,16 +117,16 @@ article {
 
 .Submit {
   color: #000000;
-    font-size: 25px;
-    text-decoration: none;
-    border: 2px solid #000000;
-    padding: 10px 40px;
-    background-color: rgba(236, 214, 15, 0.973);;
-    margin-top: 50px;
-    display: inline-block;
+  font-size: 25px;
+  text-decoration: none;
+  border: 2px solid #000000;
+  padding: 10px 40px;
+  background-color: rgba(236, 214, 15, 0.973);
+  margin-top: 50px;
+  display: inline-block;
 
-    position: relative;
-    margin-left: 100px;
+  position: relative;
+  margin-left: 100px;
 }
 
 .Submit:hover {
@@ -126,11 +135,18 @@ article {
 }
 /* кнопки */
 
-
-
 .about-paragraph {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+  margin-top: 10%;
+  font-size: 1.375rem;
   line-height: 50px;
   font-weight: 300;
+  max-width: 510px;
+  min-width: 400px;
+  margin-left: 50px;
   text-align: center;
 }
 
@@ -146,13 +162,12 @@ article {
   font-family: 'Dela Gothic One';
 }
 
-
 /* настройка фотографий */
 .photo123 {
   display: flex;
-  justify-content: space-between;
-  margin: 100px;
+  justify-content: space-around;
   transition: 1s;
+  margin-top: 300px;
 }
 
 .photo:hover {
@@ -160,16 +175,20 @@ article {
   transition: 1s;
 }
 
-.photo1 {
+.teamlogo {
+  background-image: url('./photo13.jpg');
+  background-repeat: no-repeat;
+  flex: 0 0 50%;
   position: relative;
   top: 100px;
   max-width: 80%;
-  
 }
 
-
 .nature-picture {
+  display: flex;
+  justify-content: center;
   height: 500px;
+  margin: 30px;
   transition: transform 0.2s;
 }
 
@@ -178,9 +197,13 @@ article {
 }
 
 .picture-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
   overflow: hidden;
 }
 /* настройка фотографий */
+
 
 
 /* настройка фона 1/2 мейна */
@@ -192,7 +215,6 @@ article {
   background-color: rgba(236, 214, 15, 0.973);
 }
 /* настройка фона 1/2 мейна */
-
 
 
 
@@ -213,8 +235,6 @@ article {
   top: 30px;
 }
 
-
-
 .form-control {
   position: relative;
   margin-left: 20px;
@@ -229,6 +249,3 @@ article {
   height: 100px;
   top: 30px;
 }
-
-
-/* настройки форм */
