@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 
 body {
   margin: 0%;
@@ -7,11 +8,11 @@ body {
 
 p {
   font-size: 20px;
-  font-family: 'Dela Gothic One';
+  font-family: 'Noto Sans JP';
 }
 
 h1 {
-  font-family: 'Dela Gothic One';
+  font-family: 'Noto Sans JP';
   font-size: 90px;
   color: aliceblue;
 }
@@ -46,7 +47,7 @@ header {
 /* бургер-меню */
 
 .Freepik {
-  font-family: 'Dela Gothic One';
+  font-family: 'Noto Sans JP';
   font-size: 21px;
   color: black;
 }
@@ -54,23 +55,34 @@ header {
 /* настройка фона и позиций 1 секции*/
 article {
   background-color: rgba(236, 214, 15, 0.973);
+  display: flex;
+  flex: 0;
+  justify-content: center;
 
-  padding-left: 50px;
-  padding-right: 50px;
+  /* padding-left: 50px;
+  padding-right: 50px; */
   min-height: 100%;
   max-width: 100%;
 }
+
 .art-content {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  width: 1000px;
+  flex: 0 0 50%;
 }
 .teamlogo {
   background-image: url('./photo13.jpg');
+  display: block;
   background-repeat: no-repeat;
-  min-height: 742px;
   background-position: 50% 50%;
+  flex: 0 0 50%;
+  position: relative;
+  background-size: cover;
+  object-fit: cover;
+  top: 100px;
+  min-height: 678px;
+  width: 570px;
 }
 .port {
   margin-top: 570px;
@@ -79,7 +91,7 @@ article {
 
 .Portfolio {
   display: flex;
-  margin-bottom: 300px;
+  margin-bottom: 270px;
   margin-right: 200px;
 }
 
@@ -131,7 +143,7 @@ article {
 
 .Submit:hover {
   background-color: black;
-  color: aliceblue;
+  color: rgb(233, 237, 241);
 }
 /* кнопки */
 
@@ -148,17 +160,20 @@ article {
   min-width: 400px;
   margin-left: 50px;
   text-align: center;
+  color: black;
 }
 
 .paragraph {
   position: relative;
   margin-left: 300px;
+  color: aliceblue;
 }
 
 .predsl {
   position: relative;
   margin-left: 300px;
   font-size: 30px;
+  color: aliceblue;
   font-family: 'Dela Gothic One';
 }
 
@@ -208,7 +223,7 @@ article {
 
 /* настройка фона 1/2 мейна */
 .main1 {
-  background-color: rgba(5, 24, 82, 0.842);
+  background-color: rgba(2, 12, 44, 0.842);
 }
 
 .main2 {
@@ -222,7 +237,7 @@ article {
 
 .form-label {
   font-size: 40px;
-  font-family: 'New Tegomin';
+  font-family: 'Noto Sans JP';
   position: relative;
   margin-left: 168px;
 }
@@ -230,7 +245,7 @@ article {
 .form-label1 {
   position: relative;
   font-size: 40px;
-  font-family: 'New Tegomin';
+  font-family: 'Noto Sans JP';
   margin-left: 100px;
   top: 30px;
 }
@@ -248,4 +263,44 @@ article {
   width: 500px;
   height: 100px;
   top: 30px;
+}
+/* настройки форм */
+
+@media screen and (max-width: 992px) {
+  .art-content {
+    display: flex;
+    justify-content: center;
+    flex: 0 0 50%;
+    width: 730px;
+  }
+  .teamlogo {
+    min-height: 450px;
+  }
+  .about-paragraph {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-top: 10%;
+    font-size: 1rem;
+    line-height: 50px;
+    font-weight: 300;
+    max-width: 400px;
+    min-width: 300px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .art-content {
+    display: flex;
+    flex: 0 0 50%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+  }
+  .teamlogo {
+    position: inherit;
+    width: 1000px;
+    min-height: 450px;
+  }
 }
